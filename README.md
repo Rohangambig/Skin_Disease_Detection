@@ -1,3 +1,5 @@
 ﻿# Skin_Disease_Detection
 
-![Image Alt Text](https://url-of-the-image.com/image.png)
+
+
+![Logo](https://github.com/Rohangambig/Skin_Disease_Detection/blob/main/Screenshot%202024-11-28%20134538.png)
