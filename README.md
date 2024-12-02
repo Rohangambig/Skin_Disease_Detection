@@ -1,3 +1,3 @@
 ﻿# Skin_Disease_Detection
 
-![Uploading Screenshot 2024-11-28 134538.png…]()
+![Image Alt Text](https://url-of-the-image.com/image.png)
