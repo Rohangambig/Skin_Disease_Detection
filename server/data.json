@@ -1,0 +1,115 @@
+[
+  {
+    "disease": "Basal Cell Carcinoma",
+    "medicine_name": "Imiquimod (Aldara, Zyclara)",
+    "quantity": "1 tube",
+    "description": "This immune response modifier cream stimulates the immune system to attack cancer cells. It's often used for superficial BCC..",
+    "photo": "https://www.amazon.com/imiquimod-cream/s?k=imiquimod+cream", 
+    "ratings": 4.5
+  },
+  {
+    "disease": "Basal Cell Carcinoma",
+    "medicine_name": "5-Fluorouracil (Efudex, Carac)",
+    "quantity": "1 tube",
+    "description": "A chemotherapy cream used for superficial BCC. It works by inhibiting cancer cell growth.",
+    "photo": "https://reference.medscape.com/drug/efudex-carac-fluorouracil-topical-343545",
+    "ratings": 4.4
+  },
+  {
+    "disease": "Basal Cell Carcinoma",
+    "medicine_name": "Aminolevulinic Acid",
+    "quantity": "1 tube",
+    "description": "These photosensitizing agents are applied to the skin, and the area is then exposed to light, which helps destroy cancer cells.",
+    "photo": "https://www.cvs.com/drug/levulan-kerastick",
+    "ratings": 4.4
+  },
+  {
+    "disease": "Basal Cell Carcinoma",
+    "medicine_name": "fadeout",
+    "quantity": "1 tube",
+    "description": "These photosensitizing agents are applied to the skin, and the area is then exposed to light, which helps destroy cancer cells.",
+    "photo": "https://imgs.search.brave.com/nCoaWOapOeq55ADJPlJhoWP6IkiH9fywG2erTSHSa4M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFNcnZhdVZXTEwu/anBn",
+    "ratings": 4.4
+  },
+  {
+    "disease": "Benign Keratosis",
+    "medicine_name": "Imiquimod",
+    "quantity": "100 gram",
+    "description": "A cream that stimulates the immune system to release chemicals that destroy abnormal skin cells. Often used for actinic keratosis.",
+    "photo": "https://imgs.search.brave.com/RKZ68Szk9w3r889KQ6nd_K0i2SphX2sWkwwSHiilHAs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pay5p/bWFnZWtpdC5pby9p/bnNpZGVyeC90YXI0/MTQ1MC5qcGc_dHI9/ZHByLTEsdy0xNzgs/aC0xMzQsY20tcGFk/X3Jlc2l6ZSxiZy0w/MDAwMDAsZm8tYm90/dG9t",
+    "ratings": 4
+  },
+  {
+    "disease": "Benign Keratosis",
+    "medicine_name": "Fluorouracil ",
+    "quantity": "100 gram",
+    "description": "A cream that stimulates the immune system to release chemicals that destroy abnormal skin cells. Often used for actinic keratosis.",
+    "photo": "https://imgs.search.brave.com/_AL4RcZBH3hrEPmdEbeTqGxRJbN8649MwnZCIwJPzso/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z3J4c3RhdGljLmNv/bS9kNGZ1cXFkNWwz/ZGJ6L3Byb2R1Y3Rz/L3Rtcy9QYWNrYWdl/XzE5ODA4LkpQRw",
+    "ratings": 4
+  },
+  {
+    "disease": "Benign Keratosis",
+    "medicine_name": "Diclofenac",
+    "quantity": "150 gram",
+    "description": "A gel that reduces inflammation and is often used for mild actinic keratosis.",
+    "photo": "https://imgs.search.brave.com/TXWAlsmIBgsfG1G1H1Fq7EkDSxDXwj0I68mCEbhKL_U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9m/L2YzL0RpY2xvZmVu/YWNfVG9waWNhbF9H/ZWwuanBn",
+    "ratings": 4.3
+  },
+  {
+    "disease": "Benign Keratosis",
+    "medicine_name": "Salicylic Acid:",
+    "quantity": "150 gram",
+    "description": " Over-the-counter salicylic acid can help remove the outer layer of skin, which may reduce small keratoses, especially seborrheic keratosis.",
+    "photo": "https://imgs.search.brave.com/H3CYlrOv3sQN-vQii1zz4lpH0aAD9VwFjw60jFTe7VA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWVkc2NhcGVzdGF0/aWMuY29tL3BpL2Zl/YXR1cmVzL2RydWdk/aXJlY3Rvcnkvb2N0/dXBkYXRlL1ROWTAz/MDMwLmpwZw",
+    "ratings": 4
+  },
+  {
+    "disease": "Benign Keratosis",
+    "medicine_name": "Calcipotriol",
+    "quantity": "250 gram",
+    "description": "This synthetic vitamin D3 analogue may be combined with 5-fluorouracil to treat actinic keratosis.",
+    "photo": "https://imgs.search.brave.com/eQt42j1mXSPtguFZwFtewkAwqhyBNnkuyRlVIv9KkMw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5wb3N0LnJ2b2hl/YWx0aC5pby8yVTRu/TlpFZjdqdDRzN2ZX/WlJXWFBjWXNYeXov/MjAyMy8wOC8yMy8y/VU1aTWFlUGZabDlS/WU5aWlA2QWF2S2Nh/NlcuanBn",
+    "ratings": 4
+  },
+  {
+    "disease": "Melanoma",
+    "medicine_name": "Pembrolizumab",
+    "quantity": "1 vial",
+    "description": "A checkpoint inhibitor that helps the immune system recognize and attack cancer cells.  ",
+    "photo": "https://imgs.search.brave.com/ZvJ5HXmxhMZnfc44LjOlLzpR1JYPMRq7PqXg5TNCs8s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWVkc2NhcGVzdGF0/aWMuY29tL3RodW1i/bmFpbF9saWJyYXJ5/L2h0XzIwMDEwOF9r/ZXl0cnVkYV84MDB4/NDUwLmpwZz9pbnRl/cnBvbGF0aW9uPWxh/bmN6b3Mtbm9uZSZy/ZXNpemU9MjM0Oio",
+    "ratings": 4.6
+  },
+  {
+    "disease": "Melanoma",
+    "medicine_name": "Yervoy",
+    "quantity": "1 vial",
+    "description": "A CTLA-4 inhibitor that stimulates the immune response to target and destroy melanoma cells.",
+    "photo": "https://imgs.search.brave.com/pUWPbdJ3UxQPcw_mLSMqNlJWf9-yTZJC14IanQnmd5g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWVkc2NhcGVzdGF0/aWMuY29tL3BpL2Zl/YXR1cmVzL2RydWdk/aXJlY3Rvcnkvb2N0/dXBkYXRlL0JNUDIz/MjgwLmpwZw",
+    "ratings": 4.6
+  },
+  {
+    "disease": "Melanoma",
+    "medicine_name": "Tecentriq",
+    "quantity": "1 vial",
+    "description": "Used for some types of melanoma in combination with other treatments.",
+    "photo": "https://imgs.search.brave.com/ZoWoJMzTDBQQuZbBQa1qJww3VRwX6oa_W3rKXa0s0xA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWVkc2NhcGVzdGF0/aWMuY29tL3BpL2Zl/YXR1cmVzL2RydWdk/aXJlY3Rvcnkvb2N0/dXBkYXRlL0dOVDA5/MTgwLmpwZw",
+    "ratings": 4.6
+  },
+  {
+    "disease": "Melanocytic Nevi",
+    "medicine_name": "Surgical Excision",
+    "quantity": "N/A",
+    "description": "Surgical removal of nevi that are concerning.",
+    "photo": "https://example.com/surgical_excision.jpg",
+    "ratings": 4.3
+  },
+  {
+    "disease": "Melanocytic Nevi",
+    "medicine_name": "Surgical Excision",
+    "quantity": "N/A",
+    "description": "Surgical removal of nevi that are concerning.",
+    "photo": "https://example.com/surgical_excision.jpg",
+    "ratings": 4.3
+  }
+]
+  

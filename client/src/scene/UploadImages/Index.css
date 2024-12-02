@@ -1,0 +1,24 @@
+.disease-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.suggested-headings
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.doctors-list::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,367 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f5a623;
+  --background-color: #f0f4f8;
+  --text-color: #333;
+  --sidebar-color: #2c3e50;
+  --card-color: #ffffff;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.doctor-dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 350px;
+  background-color: var(--sidebar-color);
+  color: #fff;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.profile-container {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 20px;
+
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.doctor-name {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.doctor-email {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.5rem;
+}
+
+.sidebar-nav ul {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.sidebar-nav ul li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: var(--card-color);
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.main-header h1 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.btn-notification,
+.btn-profile {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  position: relative;
+}
+
+#icon-bell {
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+}
+
+.notification-badge {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.profile-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.calendar-section,
+.appointments-section {
+  background-color: var(--card-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.calendar-section h2,
+.appointments-section h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.custom-calendar {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: inherit;
+}
+
+.react-calendar__tile {
+  padding: 1em 0.5em;
+  font-size: 0.9rem;
+}
+
+.react-calendar__tile--active {
+  background-color: var(--primary-color) !important;
+  color: #fff;
+}
+
+.react-calendar__tile--now {
+  background-color: var(--secondary-color) !important;
+  color: #fff;
+}
+
+.react-calendar__navigation button {
+  color: var(--primary-color);
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #e74c3c;
+}
+
+.appointment-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.no-appointments {
+  color: #7f8c8d;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: var(--border-radius);
+}
+
+.appointment-item {
+  display: flex;
+  cursor: pointer;
+  /* flex-direction: column;   */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.remove-cart-button {
+  background: linear-gradient(135deg, #ff6b6b, #ee5253);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(238, 82, 83, 0.2);
+  z-index: 10;
+}
+
+.appointment-item:hover {
+  background-color: rgba(74, 144, 226, 0.1);
+}
+
+.appointment-time {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.appointment-name {
+  color: var(--text-color);
+}
+
+.appoitment-person {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly ;
+}
+
+#person-image {
+  width: 40px;
+}
+
+@media (max-width: 1024px) {
+  .doctor-dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+  }
+
+  .sidebar-nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .sidebar-nav ul li {
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-actions {
+    margin-top: 1rem;
+  }
+
+  .sidebar-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .sidebar-nav ul li {
+    flex: 1 1 50%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.doctor-dashboard {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.btn-notification:hover #icon-bell,
+.btn-profile:hover .profile-thumb {
+  opacity: 0.8;
+  color: white;
+}
+
+.appointment-item:last-child {
+  border-bottom: none;
+}
+
+.appointment-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.appointment-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.appointment-list::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+.appointment-list::-webkit-scrollbar-thumb:hover {
+  background: #3a7bc0;
+}

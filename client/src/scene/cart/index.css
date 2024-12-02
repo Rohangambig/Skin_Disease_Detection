@@ -1,0 +1,207 @@
+.cart-headings {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  animation: slideDown 0.6s ease-out;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.cart-headings::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #4a90e2, #357abd);
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.medicine-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.medicine-item {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.medicine-item:nth-child(n) {
+  animation-delay: calc(0.15s * var(--i, 1));
+}
+
+.medicine-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.medicine-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease;
+}
+
+.medicine-item:hover .medicine-photo {
+  transform: scale(1.08);
+}
+
+.medicine-item h3 {
+  color: #2c3e50;
+  padding: 1.2rem 1.5rem 0.5rem;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.medicine-item h5 {
+  color: #34495e;
+  padding: 0 1.5rem;
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#p-last-child {
+  color: #666;
+  padding: 0.5rem 1.5rem 1.8rem;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+#remove-cart-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #ff6b6b, #ee5253);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(238, 82, 83, 0.2);
+  z-index: 10;
+}
+
+.medicine-item:hover #remove-cart-button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#remove-cart-button:hover {
+  background: linear-gradient(135deg, #ee5253, #ff6b6b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(238, 82, 83, 0.3);
+}
+
+#remove-cart-button:active {
+  transform: translateY(1px);
+}
+
+.error {
+  text-align: center;
+  color: #ee5253;
+  padding: 2.5rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  animation: shake 0.5s ease-out;
+  border: 1px solid rgba(238, 82, 83, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-12px); }
+  40% { transform: translateX(12px); }
+  60% { transform: translateX(-8px); }
+  80% { transform: translateX(8px); }
+}
+
+@media (max-width: 768px) {
+  .cart-headings {
+    font-size: 2rem;
+  }
+
+  .medicine-list {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  #remove-cart-button {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .medicine-item {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  border-radius: 5px;
+  border: 2px solid #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #357abd, #4a90e2);
+} 

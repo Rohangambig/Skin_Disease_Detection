@@ -1,0 +1,240 @@
+/* Main Container */
+.appointment-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+  
+  /* Page Title */
+  .page-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  .title-icon {
+    font-size: 2rem;
+  }
+  
+  /* Grid Layout */
+  .appointment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  /* Appointment Card */
+  .appointment-card {
+    background: white;
+    border-radius: 15px;
+    width: fit-content;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideUp 0.5s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .appointment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card Header */
+  .card-header {
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+  }
+  
+  .card-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  .appointment-date {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  /* Card Body */
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .info-label {
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .info-value {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  /* Status Badge */
+  .card-status {
+    padding: 1rem 1.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: #4caf50;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .cancel-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: #ff1f1f;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .cancel-badge:hover {
+    background: #fd9f9f;
+  }
+
+  /* Loading State */
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    color: #4a90e2;
+  }
+  
+  .loading-icon {
+    animation: rotate 2s linear infinite;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Error State */
+  .error-message {
+    text-align: center;
+    color: #dc3545;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 500px;
+  }
+  
+  /* Empty State */
+  .no-appointments {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+  }
+  
+  .empty-state-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animations */
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .appointment-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .page-title {
+      font-size: 2rem;
+    }
+    
+    .appointment-card {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Modern Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4a90e2;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #357abd;
+  }
