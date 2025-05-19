@@ -1,6 +1,19 @@
-﻿# Skin_Disease_Detection
+# 🩺 AI-Based Skin Disease Detection Platform
 
-This is the frontend design of this project so you will get two seperate pages for user as well as doctor .
+A comprehensive web application that leverages AI to analyze skin disease from uploaded images and provide users with an end-to-end solution including diagnosis, medicine recommendations, and access to doctors via chat and video call.
+
+---
+
+## 🚀 Features
+
+- 📷 **Image Upload**: Users can upload skin images for analysis.
+- 🧠 **AI Diagnosis**: Pretrained machine learning model (Flask API) predicts the skin disease.
+- 💊 **Medicine Suggestions**: Based on the diagnosis, the app recommends medicines with e-commerce integration.
+- 👨‍⚕️ **Doctor Connectivity**: Users can contact doctors via messaging or video calls.
+- 🛒 **E-commerce Module**: Users can purchase prescribed medicines directly.
+- 🔐 **Authentication**: Secure login/signup for users and doctors.
+
+---
 
 # Home page
 ![Logo](https://github.com/Rohangambig/Skin_Disease_Detection/blob/main/Screenshot%202024-11-28%20134538.png)
